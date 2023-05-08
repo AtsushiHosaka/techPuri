@@ -8,42 +8,6 @@ get '/' do
 end
 
 post '/takePhoto' do
-    # puts 
-    # puts 'here'
-    # puts params["value"]
-    # if params[:file]
-
-    #     uuid = SecureRandom.uuid
-
-    #     # Dir.mkdir("archive/#{uuid}")
-		
-	# 	# file = File.new("archive/#{uuid}/1.jpg", "wb")
-
-    #     # puts params[:file]
-
-    #     # file.write(params[:file][:tempfile].read)
-
-    #     file.close
-	# 	puts "アップロード成功"
-	# else
-	# 	puts "アップロード失敗"
-	# end
-
-    # img_array = params[:file].split(/\s*,\s*/)
-
-    # puts
-    # puts 'here'
-    # puts img_array
-
-    # uuid = SecureRandom.uuid
-    # Dir.mkdir("archive/#{uuid}")
-
-    # file = File.new("archive/#{uuid}/1.jpg", "wb")
-
-    # file.puts img_array[0].unpack('m')[0]
-
-    # file.close
-
     uuid = SecureRandom.uuid
 
     Dir.mkdir("archive/#{uuid}")
